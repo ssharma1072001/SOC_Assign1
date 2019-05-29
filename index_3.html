@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Index_3</title>
+
+    </head>
+
+    <script>
+        function google(){
+            var frame = document.getElementById("frame");
+            frame.setAttribute("src","https://www.google.com/webhp?igu=1");
+        }
+        function wiki(){
+            var frame = document.getElementById("frame");
+            frame.setAttribute("src","https://www.wikipedia.org/");
+        }
+        function bing(){
+            var frame = document.getElementById("frame");
+            frame.setAttribute("src","https://www.bing.com/");
+        }
+    </script>
+
+    <body>
+        <h1>My First sub-window</h1> <br>
+        <button value = "Google" onclick="google()">Google</button>
+        <button value = "Wikipedia" onclick="wiki()">Wikipedia</button>
+        <button value = "Bing" onclick="bing()">Bing</button> <br>
+        <iframe id = "frame" height = "70%" width = "70%"></iframe>
+
+    </body>
+</html>

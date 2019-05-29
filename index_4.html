@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Index_4</title>
+
+    </head>
+
+    <script>
+        function link(){
+            var x = document.getElementById("web").value;
+            var frame = document.getElementById("frame");
+            frame.setAttribute("src", x);
+        }
+    </script>
+
+    <body>
+        <h1>My First sub-window</h1> <br>
+        <form action="">
+        URL: <input type="url"placeholder = "Enter your URL"  id = "web"> <br>
+        <input type = "button" value = "Go" onclick ="link()" >
+        </form>
+        <br>
+        <iframe id = "frame" height = "70%" width = "70%"></iframe>
+
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Index_5</title>
+
+    </head>
+
+    <script>
+        function link(){
+            var x = document.getElementById("web").value;
+            var frame = document.getElementById("frame");
+            frame.setAttribute("src", x);
+            var long = document.getElementById("high").value;
+            frame.setAttribute("height", long);
+            var broad = document.getElementById("wide").value;
+            frame.setAttribute("width", broad);
+        }
+    </script>
+
+    <body>
+        <h1>My First sub-window</h1> <br>
+        <form action="">
+        URL: <input type="url"placeholder = "Enter your URL"  id = "web"> <br>
+        Frame Height:<input type="text" id = "high" placeholder = "Enter Height in px" > <br>
+        Frame Width:<input type="text" id = "wide" placeholder = "Enter Width in px" > <br>
+        <input type = "button" value = "Go" onclick ="link()" >
+        </form>
+        <br>
+        <iframe id = "frame"></iframe>
+
+    </body>
+</html>
